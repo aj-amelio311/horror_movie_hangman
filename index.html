@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Horror Movie Hangman</title>
+    <link href="style.css" rel="stylesheet" text="stylesheet/css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+</head>
+<body>
+    
+    
+<div id="outcome">
+</div>  
+    
+<div id="yourTime"></div>    
+    
+<div id="homeScreen" class="hideMe">
+    <h1 id="homeTitle">Horror Movie Hangman</h1>
+    <button id="enter">Click to Play</button>
+</div>    
+      
+<div id="wholeDamnThing" class="hideMe">       
+    <h1 id="title" class="hideMe">Horror Movie Hangman</h1>
+<div id="missAlert">
+</div>
+    
+    
+  
+    <div id="blanks" class="hideMe">
+    </div>
+    
+    
+<div class="guy">
+    <div class="display">
+        <img src="assets/hanger.png"  id="hanger" class="hideMe"/>
+        <div class="headDiv">
+        <img src="assets/head.png" id="head" class="hideMe"/>
+        </div>
+        <img src="assets/body.png" id="body" class="hideMe"/>
+        <img src="assets/armL.png" id="armL" class="hideMe"/>
+        <img src="assets/armL.png" id="armR" class="hideMe"/>
+        <img src="assets/armL.png" id="legL" class="hideMe"/>
+        <img src="assets/armL.png" id="legR" class="hideMe"/>     
+    </div>    
+</div>
+    
+
+    
+<div class="text">
+
+    <div id="playerInput" class="hideMe">
+        <input type="text" id="userGuess" maxlength="1"/>
+        <button id="click">Submit</button>
+    </div>      
+</div>
+    
+<div class="misses">
+    <p id="missesTitle" class="hideMe">Letters Guessed:</p>
+    <div id="misses"> </div>
+</div>  
+    
+    
+    
+</div>     
+        
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
