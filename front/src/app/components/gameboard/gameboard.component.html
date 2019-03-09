@@ -1,0 +1,63 @@
+<div class="col-md-12">
+
+<span *ngIf="dummyAnswers.length > 0">
+  <div class="whole-board"  @slide @fade>
+    <div class="col-md-12 guy">
+        <div class="display">
+            <img src="assets/hanger.png"  id="hanger"/>
+            <div class="the-guy">
+              <span *ngIf="misses.length >= 1">
+                <div class="headDiv">
+                <img src="assets/head.png" id="head"/>
+                </div>
+              </span>
+              <span *ngIf="misses.length >= 2">
+                <img src="assets/body.png" id="body" />
+              </span>
+              <span *ngIf="misses.length >= 3">
+                <img src="assets/armL.png" id="armL" />
+              </span>
+              <span *ngIf="misses.length >= 4">
+                <img src="assets/armL.png" id="armR" />
+              </span>
+              <span *ngIf="misses.length >= 5">
+                <img src="assets/armL.png" id="legL" />
+              </span>
+              <span *ngIf="misses.length === 6">
+                <img src="assets/armL.png" id="legR" />
+              </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 word">
+      {{drawBoard()}}
+    </div>
+
+    <div class="col-md-12 user-input">
+      <form (ngSubmit)="handleGuess(form)" #form="ngForm" autocomplete="off">
+        <div class="row">
+          <input type="text" name="guess" maxlength="1" class="guess" ngModel/>
+        </div>
+        <div class="row">
+          <input type="submit" value="Go!" class="go button"/>
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 misses">
+        <h2>Letters Guessed</h2>
+        <ul>
+          <li *ngFor="let letter of misses">{{letter}}</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h2>Score: {{ score }}</h2>
+        <h2>Time Left: <countdown [config]="{leftTime: 60}" (finished)="onFinish()">$!m!:$!s!</countdown></h2>
+      </div>
+    </div>
+
+  </div>
+</span>
+</div>

@@ -1,0 +1,40 @@
+<div class="col-md-12">
+
+  <div class="row col-md-2">
+    <a routerLink="/">Home</a>
+  </div>
+
+<div @slide @fade>
+
+  <div class="row col-md-12">
+    <h2>High Scores</h2>
+  </div>
+
+
+<span *ngIf="scores.length > 0">
+<div class="table-responsive col-md-12">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th style="width: 10%">#</th>
+        <th style="width: 30%">Player</th>
+        <th style="width: 30%">Score</th>
+        <th style="width: 30%">Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of scores; let i = index">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{user.user}}</td>
+        <td>{{user.score}}</td>
+        <td>{{user.date |  date:'MM-dd-yyyy'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</span>
+  <div class="col-md-12">
+    <button class="button" routerLink="/play">Play</button>
+  </div>
+</div>
+</div>

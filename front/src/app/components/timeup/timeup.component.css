@@ -1,0 +1,31 @@
+
+
+h1, h3 {
+  text-align: center;
+  color: white !important;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.button {
+  width: 200px;
+  height: auto;
+  background-color: indianred;
+  color: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #da8888;
+}
+
+.add-name {
+  margin-top: 20px;
+}

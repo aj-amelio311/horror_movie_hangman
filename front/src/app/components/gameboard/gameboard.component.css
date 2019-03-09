@@ -1,0 +1,134 @@
+.word {
+  font-size: 36px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+.misses ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.misses ul li {
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+
+.guess {
+  width: 100px;
+  font-size: 30px;
+}
+
+.go {
+  margin-top: 20px;
+}
+
+.user-input {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  text-align: center;
+}
+
+#head {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 130px;
+    z-index: 4;
+}
+
+#body {
+    width: 10px;
+    height: 80px;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: 145px;
+}
+
+#armL {
+    width: 50px;
+    height: 10px;
+    position: absolute;
+    margin-top: -145px;
+    margin-left: 150px;
+}
+
+#armR {
+    width: 50px;
+    height: 10px;
+    position: absolute;
+    margin-top: -145px;
+    margin-left: 110px;
+}
+
+#legL {
+    width: 50px;
+    height: 10px;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 112px;
+    transform: rotate(120deg);
+}
+
+#legR {
+    width: 50px;
+    height: 10px;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 138px;
+    transform: rotate(-120deg);
+}
+
+.the-guy {
+  margin-right: 180px;
+  pointer-events: none;
+}
+
+h1, h2, h3, h4, h5, h6, a, li {
+  font-family: 'Permanent Marker', cursive;
+  color: white !important;
+}
+
+li {
+  font-size: 20px;
+}
+
+.misses h2 {
+  color: red;
+}
+
+.misses li {
+  color: red;
+}
+
+.button {
+  width: 200px;
+  height: auto;
+  background-color: indianred;
+  color: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 22px;
+}
+
+.button:hover {
+  background-color: #da8888;
+}
+
+#hanger {
+  pointer-events: none;
+}
